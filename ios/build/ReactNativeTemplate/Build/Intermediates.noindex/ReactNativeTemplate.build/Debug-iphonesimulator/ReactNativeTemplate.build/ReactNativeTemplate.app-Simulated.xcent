@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>FVD8SMFC87.org.reactjs.native.example.ReactNativeTemplate</string>
+	<string>FVD8SMFC87.com.ammoconnect</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>FVD8SMFC87.org.reactjs.native.example.ReactNativeTemplate</string>
+		<string>FVD8SMFC87.com.ammoconnect</string>
 	</array>
 </dict>
 </plist>

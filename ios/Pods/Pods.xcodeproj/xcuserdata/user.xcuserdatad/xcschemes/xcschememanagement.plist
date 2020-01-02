@@ -129,11 +129,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>React-RCTPushNotification.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>React-RCTSettings.xcscheme</key>
 		<dict>
 			<key>isShown</key>

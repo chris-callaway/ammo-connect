@@ -7,13 +7,12 @@ import ButtonComponent, { CircleButton, RoundButton, RectangleButton } from 'rea
 import Helper from '../helper';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import PushNotificationIOS from "@react-native-community/push-notification-ios";
-
+var PushNotification = require("react-native-push-notification");
 
 class HomeScreen extends React.Component {
 
     constructor(props) {
         super(props);
-        PushNotificationIOS.addEventListener('register', this._onPushNotificationRegistration);
     }
 
     state = {
@@ -21,63 +20,119 @@ class HomeScreen extends React.Component {
         deviceId: ''
     };
 
-    // componentWillMount() {
-    //     // NOTE: You absolutely need this for requestPermissions() promise to resolve.   
-    //     PushNotificationIOS.addEventListener('register', (token) => {});
-    //   }
-      
-    //   componentWillUnmount() {
-    //     PushNotificationIOS.removeEventListener('register', (token) => {});
-    //   }
-
     componentWillMount() {
-        // NOTE: You absolutely need this for requestPermissions() promise to resolve. 
-        PushNotificationIOS.addEventListener('localNotification', () => {});
-        PushNotificationIOS.requestPermissions().then((permissions) => {
-            Helper.alertHandler('Have it ' + permissions);
-        });       
-        PushNotificationIOS.addEventListener('register', (token) => {
-            Helper.alertHandler('register: ' + token);
-        });
-       // PushNotificationIOS.requestPermissions();
       }
-      
+
       componentWillUnmount() {
-        PushNotificationIOS.removeEventListener('register', (token) => {
-            Helper.alertHandler('unregister: ' + token);
-        });
+
       }
 
     componentDidMount() {
         var self = this;
+        var deviceId = Helper.getdeviceId();
+        console.log('deviceId', deviceId);
         this.props.navigation.addListener(
             'willFocus',
             () => {
                 this.setState({deviceId: Helper.getdeviceId()});
             }
         );
-       
-        // PushNotificationIOS.requestPermissions();
-        // PushNotificationIOS.addEventListener('register', function(devicetoken){
-        //   console.log('register', devicetoken);
-        //   Helper.alertHandler('register: ' + devicetoken);
-        // });
-        
-        // PushNotificationIOS.addEventListener('registrationError', function(error){
-        //   var errorKey = Object.keys(error)[0]; 
-        //   var errorValue = error[errorKey];
-        //   console.log('error', errorKey, errorValue);
-        //   Helper.alertHandler('error: ' + errorValue);
-        // });
     }
 
-    _onPushNotificationRegistration(token) {
-        Helper.alertHandler('Registered for notifications ' + token);
-      
-        if (this.state.notificationToPost) {
-          //this._scheduleNotification(this.state.notificationToPost);
+    getNotificationSettings = async (deviceId) => {
+        return new Promise(async (resolve, reject) => {
+            var obj = {
+                Method: 'query',
+                Module: 'Database',
+                params: {
+                    query: 'SELECT * FROM tokens WHERE uuid = "' + deviceId + '"'
+                }
+            };
+    
+            return await Helper.apiFetch(obj).then(async function (json) {
+                if (json.length > 0){
+                    resolve(true);
+                } else {
+                    resolve(false);
+                }
+            });
+        });
+        
+    };
+
+    setNotifications = async () => {
+        var self = this;
+        PushNotification.configure({
+            // (optional) Called when Token is generated (iOS and Android)
+            onRegister: async function(token) {
+
+                console.log("TOKEN:", token);
+                var deviceId = Helper.getdeviceId();
+                var notificationsEnabled = await this.getNotificationSettings(deviceId);
+
+                if (!notificationsEnabled){
+                    var obj = {
+                        Method: 'insert',
+                        Module: 'Database',
+                        params: {
+                            table: 'tokens', obj: { token: token.token, uuid: deviceId}
+                        }
+                    };
+            
+                    return await Helper.apiFetch(obj).then(function (json) {
+                        self.goToPage('Search');
+                    });
+                } else {
+                    self.goToPage('Search');
+                }
+                
+           
+            }.bind(this),
+           
+            // (required) Called when a remote or local notification is opened or received
+            onNotification: function(notification) {
+              console.log("NOTIFICATION:", notification);
+           
+              // process the notification
+           
+              // required on iOS only (see fetchCompletionHandler docs: https://github.com/react-native-community/react-native-push-notification-ios)
+              notification.finish(PushNotificationIOS.FetchResult.NoData);
+            },
+           
+            // ANDROID ONLY: GCM or FCM Sender ID (product_number) (optional - not required for local notifications, but is need to receive remote push notifications)
+            senderID: "YOUR GCM (OR FCM) SENDER ID",
+           
+            // IOS ONLY (optional): default: all - Permissions to register.
+            permissions: {
+              alert: true,
+              badge: true,
+              sound: true
+            },
+           
+            // Should the initial notification be popped automatically
+            // default: true
+            popInitialNotification: true,
+           
+            /**
+             * (optional) default: true
+             * - Specified if permissions (ios) and token (android and ios) will requested or not,
+             * - if not, you must call PushNotificationsHandler.requestPermissions() later
+             */
+            requestPermissions: true
+          });
+    }
+
+    checkNotifications = async() => {
+        var deviceId = Helper.getdeviceId();
+        console.log('deviceId', deviceId);
+        var notificationsEnabled = await this.getNotificationSettings(deviceId);
+
+        if (!notificationsEnabled){
+            this.setNotifications();
+        } else {
+            this.goToPage('Search');
         }
-      }
+    }
 
     goToPage = (page, params) => {
         console.log('going to page', page);
@@ -116,7 +171,8 @@ class HomeScreen extends React.Component {
                                 width={250}
                                 flex={1.0}
                                 color="#2658db"
-                                onPress={ () => this.goToPage('Search') }
+                                onPress={ () => this.checkNotifications() }
+                                //onPress={ () => this._registerAlert()}
                                 //textStyle={{color: '#2658db'}}
                                 >
                             </ButtonComponent>

@@ -8,12 +8,12 @@ import ButtonComponent, { CircleButton, RoundButton, RectangleButton } from 'rea
 import moment from 'moment/min/moment-with-locales.min';
 import Video from 'react-native-video';
 import Helper from '../helper';
-import {
-    UltraPickerIOS,
-    UltraPickerIOSCloseBar,
-    Group,
-    Item
-} from "react-native-ultra-picker-ios"
+// import {
+//     //UltraPickerIOS,
+//     //UltraPickerIOSCloseBar,
+//     Group,
+//     Item
+// } from "react-native-ultra-picker-ios"
 
 class VideosPage extends React.Component<Props> {
 
@@ -299,7 +299,7 @@ class VideosPage extends React.Component<Props> {
                             </ButtonComponent>
                         </View>
 
-                        <UltraPickerIOS testID={"UltraPickerView"} onChange={this.pickerChanged}
+                        {/* <UltraPickerIOS testID={"UltraPickerView"} onChange={this.pickerChanged}
                                         style={[styles.ultraPicker, this.state.showingPicker ? {} : styles.hidden]}>
                             <UltraPickerIOSCloseBar buttonTestID={"UltraPickerCloseBarButton"} style={styles.closeBar}
                                                     onClose={this.pickerClosed}/>
@@ -310,7 +310,7 @@ class VideosPage extends React.Component<Props> {
                                 <Item label="4"/>
                                 <Item label="5" selected={true}/>
                             </Group>
-                        </UltraPickerIOS>
+                        </UltraPickerIOS> */}
 
                     </View>
 
@@ -348,7 +348,7 @@ class VideosPage extends React.Component<Props> {
                             </ButtonComponent>
                         </View>
 
-                        <UltraPickerIOS testID={"UltraPickerView"} onChange={this.pickerChanged}
+                        {/* <UltraPickerIOS testID={"UltraPickerView"} onChange={this.pickerChanged}
                                         style={[styles.ultraPicker, this.state.showingPicker ? {} : styles.hidden]}>
                             <UltraPickerIOSCloseBar buttonTestID={"UltraPickerCloseBarButton"}
                                                     style={styles.closeBar}
@@ -360,7 +360,7 @@ class VideosPage extends React.Component<Props> {
                                 <Item label="4"/>
                                 <Item label="5" selected={true}/>
                             </Group>
-                        </UltraPickerIOS>
+                        </UltraPickerIOS> */}
 
                     </View>
 

@@ -48,8 +48,7 @@ target 'ReactNativeTemplate' do
 
   pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
 
-  pod 'React-RCTPushNotification', :path => '../node_modules/react-native/Libraries/PushNotificationIOS'
-  
+  pod 'RNCPushNotificationIOS', :path => '../node_modules/@react-native-community/push-notification-ios/RNCPushNotificationIOS.podspec'
 
   target 'ReactNativeTemplateTests' do
     inherit! :search_paths

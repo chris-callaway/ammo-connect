@@ -1,62 +1,62 @@
 dependencies: \
-  /Users/user/Desktop/ammo-connect-app-master/node_modules/react-native/React/CoreModules/RCTImageLoader.mm \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Target\ Support\ Files/React-CoreModules/React-CoreModules-prefix.pch \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/RCTRequired/RCTRequired/RCTRequired.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/RCTTypeSafety/RCTTypeSafety/RCTConvertHelpers.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyVector.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyIterator.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Folly/folly/Optional.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Folly/folly/Portability.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Folly/folly/portability/Config.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Folly/folly/CPortability.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Folly/folly/Traits.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Folly/folly/Utility.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Folly/folly/lang/Exception.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Folly/folly/CppAttributes.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/RCTTypeSafety/RCTTypeSafety/RCTTypedModuleConstants.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTBridgeModule.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTCxxConvert.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTManagedPointer.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/ReactCommon/ReactCommon/RCTTurboModule.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTBridge.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTBridgeDelegate.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTJavaScriptLoader.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTFrameUpdate.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTInvalidating.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTModuleMethod.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTBridgeMethod.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTNullability.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/ReactCommon/ReactCommon/JSCallInvoker.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/ReactCommon/ReactCommon/TurboModule.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-jsi/jsi/jsi.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-jsi/jsi/jsi-inl.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-cxxreact/cxxreact/MessageQueueThread.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTImageCache.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTResizeMode.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTImageLoader.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTURLRequestHandler.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTURLRequestDelegate.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTImageDataDecoder.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTImageURLLoader.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTImageLoaderProtocol.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTImageUtils.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTNetworking.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTEventEmitter.h \
-  /Users/user/Desktop/ammo-connect-app-master/ios/Pods/Headers/Public/React-Core/React/RCTNetworkTask.h \
-  /Users/user/Desktop/ammo-connect-app-master/node_modules/react-native/React/CoreModules/CoreModulesPlugins.h
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/node_modules/react-native/React/CoreModules/RCTImageLoader.mm \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Target\ Support\ Files/React-CoreModules/React-CoreModules-prefix.pch \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/RCTRequired/RCTRequired/RCTRequired.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/RCTTypeSafety/RCTTypeSafety/RCTConvertHelpers.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyVector.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/FBLazyVector/FBLazyVector/FBLazyIterator.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Folly/folly/Optional.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Folly/folly/Portability.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Folly/folly/CPortability.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Folly/folly/Traits.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Folly/folly/Utility.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Folly/folly/lang/Exception.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Folly/folly/CppAttributes.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/RCTTypeSafety/RCTTypeSafety/RCTTypedModuleConstants.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTBridgeModule.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTCxxConvert.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTManagedPointer.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/ReactCommon/ReactCommon/RCTTurboModule.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTBridge.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTBridgeDelegate.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTFrameUpdate.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTInvalidating.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTModuleMethod.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTBridgeMethod.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTNullability.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/ReactCommon/ReactCommon/JSCallInvoker.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/ReactCommon/ReactCommon/TurboModule.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-jsi/jsi/jsi.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-jsi/jsi/jsi-inl.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-cxxreact/cxxreact/MessageQueueThread.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTImageCache.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTResizeMode.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTImageLoader.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTURLRequestHandler.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTURLRequestDelegate.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTImageDataDecoder.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTImageURLLoader.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTImageLoaderProtocol.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTImageUtils.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTNetworking.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTEventEmitter.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/ios/Pods/Headers/Public/React-Core/React/RCTNetworkTask.h \
+  /Users/user/Desktop/Projects/Ammo\ Connect/App/node_modules/react-native/React/CoreModules/CoreModulesPlugins.h
