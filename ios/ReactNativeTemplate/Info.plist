@@ -39,8 +39,12 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>App may offer the ability to upload profile images in the future</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>App uses location data to find deals that are happening near you</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App may offer the abillity to upload profile images in the future</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>
