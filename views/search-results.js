@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AsyncStorage, ActivityIndicator, Platform, Alert, AlertIOS, Image, Button, StyleSheet, View, ScrollView, TouchableHighlight, TextInput, ListView } from 'react-native';
+import { AsyncStorage, ActivityIndicator, Platform, Alert, AlertIOS, Image, Button, StyleSheet, View, ScrollView, TouchableHighlight, TextInput, ListView, Linking } from 'react-native';
 import { Container, Content, Text, StyleProvider } from 'native-base';
 import { createStackNavigator } from 'react-navigation';
 import { FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
@@ -39,8 +39,10 @@ class SearchResultsScreen extends React.Component<Props> {
         this.props.navigation.navigate(page, params);
     };
 
-    openUrl = (url) => {
-
+    openUrl = (item) => {
+        Linking.openURL(item.product_url).catch(() => {
+            Helper.alertHandler('Cannot load url, please try again later');
+          });
     };
 
     render() {
@@ -58,7 +60,7 @@ class SearchResultsScreen extends React.Component<Props> {
                     <Section>
                         {this.state.searchResults.map(item =>
 
-                                <Item onPress={event => this.openUrl()}
+                                <Item onPress={event => this.openUrl(item)}
                                       style={styles.tableCell}
                                       manufacturer={item.manufacturer}
                                       retailer={item.retailer}

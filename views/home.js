@@ -30,16 +30,19 @@ class HomeScreen extends React.Component {
     componentDidMount() {
         var self = this;
         var deviceId = Helper.getdeviceId();
-        console.log('deviceId', deviceId);
+        this.checkNotifications();
         this.props.navigation.addListener(
             'willFocus',
             () => {
-                this.setState({deviceId: Helper.getdeviceId()});
+                this.setState({deviceId: Helper.getdeviceId()}, () => {
+                    
+                });
             }
         );
     }
 
     getNotificationSettings = async (deviceId) => {
+        console.log('getting settings', deviceId);
         return new Promise(async (resolve, reject) => {
             var obj = {
                 Method: 'query',
@@ -124,13 +127,11 @@ class HomeScreen extends React.Component {
 
     checkNotifications = async() => {
         var deviceId = Helper.getdeviceId();
-        console.log('deviceId', deviceId);
+        console.log('deviceId is', deviceId);
         var notificationsEnabled = await this.getNotificationSettings(deviceId);
-
+        console.log('notificationsEnabled', notificationsEnabled);
         if (!notificationsEnabled){
             this.setNotifications();
-        } else {
-            this.goToPage('Search');
         }
     }
 
@@ -143,7 +144,7 @@ class HomeScreen extends React.Component {
         const animating = this.state.animating;
         return (
 
-            <ImageBackground source={require('./../img/splash_bg.png')}  style={{ textAlign: 'center', alignItems: 'center', justifyContent:'center', width:'100%', height:'100%'}}>
+            <ImageBackground source={require('./../img/splash_bg.jpg')}  style={{ textAlign: 'center', alignItems: 'center', justifyContent:'center', width:'100%', height:'100%'}}>
 
             <KeyboardAwareScrollView >
 
@@ -171,7 +172,7 @@ class HomeScreen extends React.Component {
                                 width={250}
                                 flex={1.0}
                                 color="#2658db"
-                                onPress={ () => this.checkNotifications() }
+                                onPress={ () =>  this.goToPage('Search') }
                                 //onPress={ () => this._registerAlert()}
                                 //textStyle={{color: '#2658db'}}
                                 >
